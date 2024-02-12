@@ -1,7 +1,11 @@
 const NavLink = ({ text }) => {
-  return <div>
-    {text}
-  </div>
+  return (
+    <li>
+      <a>
+        {text}
+      </a>
+    </li>
+  )
 }
 
 export default NavLink

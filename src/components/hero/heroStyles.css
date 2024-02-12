@@ -1,4 +1,12 @@
 .hero {
   background-color: var(--white-primary);
   color: var(--black);
+  height: 100svh;
+}
+
+.letter-grid {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
