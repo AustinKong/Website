@@ -1,6 +1,5 @@
-import LetterGrid from "../common/letter_grid/LetterGrid.jsx";
-
-import './heroStyles.css'
+import LetterGrid from "../../common/letter_grid/LetterGrid.jsx";
+import styles from './heroStyles.module.css'
 
 const fixedLetters = [
   { character: '2', location: 4},
@@ -21,10 +20,10 @@ const fixedLetters = [
 
 const Hero = () => {
   return (
-    <div className="hero">
+    <section className={styles.hero}>
       <LetterGrid fixedLetters={fixedLetters}/>
-    </div>
+    </section>
   )
 }
 
-export default Hero;
+export default Hero

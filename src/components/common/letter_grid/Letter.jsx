@@ -1,8 +1,12 @@
+import styles from './letterGridStyles.module.css'
+
 const Letter = ({ character, isHighlighted }) => {
   return (
-    <h1 className={isHighlighted ? "highlighted-letter" : "letter"}>
-      {character}
-    </h1>
+    <div className={styles.gridContainer}>
+      <span className={isHighlighted ? styles.highlighted : styles.letter}>
+        {character}
+      </span>
+    </div>
   )
 }
 

@@ -1,15 +1,22 @@
 import NavLink from './NavLink.jsx'
-
-import './navbarStyles.css'
+import styles from './navbarStyles.module.css'
 
 const Navbar = () => {
+  const navLinks = [
+    { text: 'About '},
+    { text: 'Recent Work'},
+    { text: 'Contact' }
+  ]
   return (
     <nav>
-      <div className='logo'>Austin Kong</div>
-      <ul className='nav-links'>
-        <NavLink text={"About"} />
-        <NavLink text={"Recent Work"} />
-        <NavLink text={"Contact"} />
+      <h1>Austin Kong</h1>
+      <ul className={styles.navLinks}>
+        {navLinks.map((item, index) => (
+          <NavLink 
+            key={index} 
+            text={item.text} 
+          />
+        ))}
       </ul>
     </nav>
   )

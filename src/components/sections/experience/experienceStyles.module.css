@@ -1,0 +1,14 @@
+.columnContainer {
+  width: 100%;
+  padding: 0 3vw;
+  display: flex;
+  gap: 3rem
+}
+
+.columnLeft {
+  flex: 3.5;
+}
+
+.columnRight {
+  flex: 1;
+}

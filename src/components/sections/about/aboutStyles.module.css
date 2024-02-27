@@ -1,0 +1,26 @@
+.columnContainer {
+  width: 100%;
+  padding: 0 3vw;
+  display: flex;
+  gap: 3rem;
+}
+
+.columnLeft {
+  flex: 1.5;
+}
+
+.columnRight {
+  flex: 1;
+}
+
+.socialMediaLinks {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem
+}
+
+.portrait {
+  width: 100%;
+  filter: drop-shadow(0px 4px 4px #000000);
+  border-radius: 7px;
+}
