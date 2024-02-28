@@ -1,0 +1,43 @@
+.project {
+  width: fit-content;
+}
+
+.img {
+  width: 100%;
+  border-radius: 3px;
+  margin-bottom: 1rem;
+}
+
+.header {
+  display: flex;
+  gap: 1rem;
+}
+
+.h4 {
+  font-weight: 500;
+}
+
+.tags {
+  align-items: center;
+}
+
+.tag {
+  display: inline-block;
+  color: var(--white-tertiary);
+  list-style-type: none;
+  border: 1px solid var(--white-tertiary);
+  /* Lets the tag radius scale down to fit height */
+  border-radius: 999px;
+  padding: 5px 14px;
+  margin: 0 5px;
+  width: fit-content;
+  min-width: 3rem;
+  text-align: center;
+}
+
+.description {
+  color: var(--white-tertiary);
+  font-weight: 350;
+  padding-left: 0.1rem;
+  margin-top: 0.3rem;
+}

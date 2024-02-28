@@ -2,13 +2,13 @@
   width: 100%;
   padding: 0 3vw;
   display: flex;
-  gap: 3rem
+  gap: 5rem
 }
 
 .columnLeft {
-  flex: 3.5;
+  flex: 1;
 }
 
 .columnRight {
-  flex: 1;
+  flex: 1.3;
 }

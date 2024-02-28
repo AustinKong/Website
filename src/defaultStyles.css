@@ -13,7 +13,7 @@ html, body {
   color: var(--white-primary);
 
   /* What a good man i am developing for responsiveness */
-  font-size: clamp(16px, 1.4vw, 24px);
+  font-size: clamp(16px, 1.35vw, 24px);
 }
 
 h2, h3, h4, h5, h6 {
@@ -22,6 +22,7 @@ h2, h3, h4, h5, h6 {
 
 p {
   font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 /* Reserved for navbar, for SEO purposes*/
@@ -39,7 +40,7 @@ h3 {
 }
 
 h4 {
-  font-size: 1.618rem;
+  font-size: 1.518rem;
 }
 
 small {
@@ -64,7 +65,7 @@ small {
 
 .content {
   background-color: var(--black);
-  padding: 2.5rem 0;
+  padding: 4.5rem 0;
 }
 
 .content > section {

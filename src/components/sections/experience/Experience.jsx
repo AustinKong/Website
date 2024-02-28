@@ -1,4 +1,5 @@
 import Header from '../../common/section_header/Header.jsx'
+import Skill from './Skill.jsx'
 import styles from './experienceStyles.module.css'
 
 import blob3 from '../../../images/blobs/blob3.svg'
@@ -10,6 +11,12 @@ const Experience = () => {
     { url: blob4, scale: 40, top: 0, left: 75, rotation: -120 },
   ]
 
+  const skills = [
+    { title: 'Full Stack', list: ['React JS', 'Express JS', 'Mongo DB'], index: 'a'},
+    { title: 'Game Dev', list: ['Unity', 'C#', 'Aseprite', 'Blender'], index: 'b'},
+    { title: 'Software Dev', list: ['Java', 'C#', 'Electron JS'], index: 'c'},
+  ]
+
   return (
     <section >
       <Header title='What I do.' numbering='02' />
@@ -17,12 +24,20 @@ const Experience = () => {
       <div className={styles.columnContainer}>
         <div className={styles.columnLeft}>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sit amet nibh malesuada, scelerisque elit at, gravida sem. Suspendisse rutrum dapibus diam ut consequat. Integer ac erat eget ipsum tincidunt bibendum. Nunc feugiat, justo ac condimentum lacinia, metus sapien condimentum arcu, efficitur consequat libero nunc sit amet tellus. Duis lacus augue, blandit nec venenatis ut, suscipit eget lectus. Curabitur fringilla et libero quis dictum. Quisque purus lacus, dapibus ac neque sit amet, varius efficitur lorem. Aliquam nec pulvinar arcu, a tristique leo. Phasellus posuere iaculis massa nec dictum. Cras et pulvinar leo. Nullam et blandit tortor, fringilla aliquam ligula.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sit amet nibh malesuada, scelerisque elit at, gravida sem. Suspendisse rutrum dapibus diam ut consequat. Integer ac erat eget ipsum tincidunt bibendum. 
+          </p>
+          <br />
+          <p>
+            Nunc feugiat, justo ac condimentum lacinia, metus sapien condimentum arcu, efficitur consequat libero nunc sit amet tellus. Duis lacus augue, blandit nec venenatis ut, suscipit eget lectus.
           </p>
         </div>
 
         <div className={styles.columnRight}>
-
+          {
+            skills.map((item, index) => (
+              <Skill key={index} title={item.title} list={item.list} index={item.index} />
+            ))
+          }
         </div>
       </div>
 

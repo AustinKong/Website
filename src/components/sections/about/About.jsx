@@ -23,14 +23,14 @@ const About = () => {
 
   return (
     <section>
-      <Header title='A brief intro, who am I?' numbering='01' />
+      <Header title='Let me introduce myself' numbering='01' />
 
       <div className={styles.columnContainer}>
         <div className={styles.columnLeft}>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc facilisis risus elit, id laoreet sapien facilisis eget. Morbi consectetur diam eget dui congue dictum. Aenean id euismod neque. Cras iaculis imperdiet massa, commodo volutpat arcu. In eget odio ut felis efficitur euismod. Nulla facilisi.
           </p>
-
+          <br />
           <p>
             Integer ut accumsan leo, et sagittis leo. Praesent vitae commodo enim, in luctus massa. Proin vitae ipsum nec nisl bibendum dapibus vel interdum nisl.
             Integer ut accumsan leo, et sagittis leo. Praesent vitae commodo enim, in luctus massa. Proin vitae ipsum nec nisl bibendum dapibus vel interdum nisl.
