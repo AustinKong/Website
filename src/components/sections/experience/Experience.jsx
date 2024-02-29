@@ -18,7 +18,7 @@ const Experience = () => {
   ]
 
   return (
-    <section >
+    <section>
       <Header title='What I do.' numbering='02' />
 
       <div className={styles.columnContainer}>

@@ -1,5 +1,15 @@
+.projectGrid {
+  padding: 0 3vw;
+  width: 100%;
+  display: grid;
+  gap: 5rem 2rem;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: center;
+}
+
 .project {
-  width: fit-content;
+  background-size: cover;
+  background-position: center;
 }
 
 .img {
@@ -10,15 +20,18 @@
 
 .header {
   display: flex;
-  gap: 1rem;
+  flex-wrap: wrap;
+  gap: 0.4rem 1rem;
 }
 
-.h4 {
+.h5 {
   font-weight: 500;
 }
 
 .tags {
   align-items: center;
+  display: flex;
+  column-gap: 5px;
 }
 
 .tag {
@@ -28,11 +41,11 @@
   border: 1px solid var(--white-tertiary);
   /* Lets the tag radius scale down to fit height */
   border-radius: 999px;
-  padding: 5px 14px;
-  margin: 0 5px;
+  padding: 3px 12px;
   width: fit-content;
   min-width: 3rem;
   text-align: center;
+  font-size: 0.7rem;
 }
 
 .description {

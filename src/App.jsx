@@ -14,11 +14,12 @@ const App = () => {
   return (
     <>
       <Hero />
-      <div className='content'>
+      <main className='content'>
         <About />
         <Experience />
         <Projects />
-      </div>
+      </main>
+      <Contact />
     </>
   )
 }

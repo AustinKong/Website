@@ -1,0 +1,14 @@
+.contact {
+  position: relative;
+  background-color: var(--white-primary);
+  color: var(--black);
+  height: 100svh;
+}
+
+.footer {
+  font-size: 0.8rem;
+  color: var(--white-tertiary);
+  position: absolute;
+  left: 5px;
+  bottom: 5px;
+}

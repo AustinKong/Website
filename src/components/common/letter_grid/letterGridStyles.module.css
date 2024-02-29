@@ -5,6 +5,10 @@
 
 .gridContainer {
   width: 100%;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .letterGrid {
@@ -22,16 +26,12 @@
 }
 
 .letter {
-  text-align: center;
   font-weight: bold;
-  font-size: 3rem;
   color: var(--white-secondary);
 }
 
 .highlighted {
-  text-align: center;
   font-weight: bold;
-  font-size: 3rem;
   color: var(--white-secondary);
   color: var(--black);
 }

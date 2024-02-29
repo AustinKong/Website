@@ -11,20 +11,38 @@ const Projects = () => {
       tags: ['Unity', 'C#', '2023'], 
       description: 'A simple game made in Unity bla blab bla bla blablablal',
       link: '',
-      image: image1
+      image: image1,
+      col: 3
     },
     { 
       title: 'Ode to Summer', 
       tags: ['Unity', 'C#', '2023'], 
       description: 'A simple game made in Unity bla blab bla bla blablablal',
       link: '',
-      image: image1
-    }
+      image: image1,
+      col: 2
+    },
+    { 
+      title: 'Ode to Summer', 
+      tags: ['Unity', 'C#', '2023'], 
+      description: 'A simple game made in Unity bla blab bla bla blablablal',
+      link: '',
+      image: image1,
+      col: 2
+    },
+    { 
+      title: 'Ode to Summer', 
+      tags: ['Unity', 'C#', '2023'], 
+      description: 'A simple game made in Unity bla blab bla bla blablablal',
+      link: '',
+      image: image1,
+      col: 3
+    },
   ]
   return (
     <section>
       <Header title='My Recent Work' numbering='03' />
-      <div>
+      <div className={style.projectGrid}>
         {
           projects.map((item, index) => (
             <Project 
@@ -34,6 +52,8 @@ const Projects = () => {
               description={item.description}
               link={item.link}
               image={item.image}
+              row={item.row}
+              col={item.col}
             />
           ))
         }
