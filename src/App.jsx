@@ -16,7 +16,8 @@ import './defaultStyles.css'
 const App = () => {
   const [cursorState, setCursorState] = useState('default')
 
-  const updateState = state => {
+  // States { 'default', 'project_over' }
+  const updateCursorState = state => {
     setCursorState(state)
   }
 
@@ -24,11 +25,12 @@ const App = () => {
     <>
       <Cursor cursorState={cursorState} />
 
+      <Navbar />
       <Hero />
       <main className='content'>
         <About />
         <Experience />
-        <Projects />
+        <Projects updateCursorState={updateCursorState} />
       </main>
       <Contact />
     </>

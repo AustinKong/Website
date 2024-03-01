@@ -4,7 +4,7 @@ import style from './projectsStyles.module.css'
 
 import image1 from '../../../images/projects/dunes.jpg'
 
-const Projects = () => {
+const Projects = ({ updateCursorState }) => {
   const projects = [
     { 
       title: 'Ode to Summer', 
@@ -54,6 +54,7 @@ const Projects = () => {
               image={item.image}
               row={item.row}
               col={item.col}
+              updateCursorState={updateCursorState}
             />
           ))
         }

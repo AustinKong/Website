@@ -3,6 +3,9 @@
   --white-secondary: #EFEEED;
   --white-tertiary: #C4C4C4;
   --black: #121212;
+  --brand-primary: #799e69;
+  /*#618bb4
+  */
 }
 
 html, body {
@@ -12,6 +15,7 @@ html, body {
   background-color: var(--white-primary);
   color: var(--white-primary);
 
+  cursor: none;
   /* What a good man i am developing for responsiveness */
   font-size: clamp(16px, 1.35vw, 24px);
 }

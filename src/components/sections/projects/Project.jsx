@@ -1,11 +1,19 @@
 import style from './projectsStyles.module.css'
 
-const Project = ({ title, tags, description, link, image, col }) => {
+const Project = ({ title, tags, description, link, image, col, updateCursorState }) => {
   const DESCRIPTION_MAX_LENGTH = 50
 
   return (
-    <div className={style.project} style={{ gridColumn: `span ${col}` }}>
-      <a href={link}>
+    <div 
+      className={style.project} 
+      style={{ gridColumn: `span ${col}` }}
+      >
+      <a 
+        href={link}
+        className={style.projectLink}
+        onMouseEnter={() => {updateCursorState('project_over')}}
+        onMouseLeave={() => {updateCursorState('default')}}
+        >
         <img src={image} className={style.img} />
       </a>
 

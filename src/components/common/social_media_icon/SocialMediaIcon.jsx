@@ -2,7 +2,7 @@ const SocialMediaIcon = ({ icon, link, alt, size }) => {
   // Size in REM
   const style = {
     width: `${size}rem`,
-    height: `${size}rem`
+    height: `${size}rem`,
   }
 
   return (

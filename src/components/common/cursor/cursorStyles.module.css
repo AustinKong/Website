@@ -1,4 +1,28 @@
 .cursor {
+  position: fixed;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.defaultCursor {
+  background-color: var(--brand-primary);
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+
+.projectOverCursor {
+  background-color: var(--brand-primary);
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  position: relative;
+}
+
+.projectOverCursor svg {
   position: absolute;
-  background-color: aqua;
+  top: 3.3px;
+  left: 3.2px;
+  fill: var(--black);
+  width: 40%;
 }

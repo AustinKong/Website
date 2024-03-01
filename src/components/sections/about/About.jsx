@@ -38,7 +38,13 @@ const About = () => {
 
           <div className={styles.socialMediaLinks}>
             {socialMediaIcons.map((item, index) => (
-              <SocialMediaIcon key={index} size='1.5' icon={item.icon} alt={item.alt} link={item.link} />
+              <SocialMediaIcon 
+                key={index} 
+                size='1.8' 
+                icon={item.icon} 
+                alt={item.alt} 
+                link={item.link} 
+                />
             ))}
           </div>
         </div>
