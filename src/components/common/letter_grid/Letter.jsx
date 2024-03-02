@@ -1,3 +1,6 @@
+import { motion } from 'framer-motion'
+import { useState } from 'react'
+
 import githubIcon from '../../../images/icons/githubBlack.svg'
 import linkedinIcon from '../../../images/icons/linkedinBlack.svg'
 import telegramIcon from '../../../images/icons/telegramBlack.svg'
@@ -5,7 +8,15 @@ import telegramIcon from '../../../images/icons/telegramBlack.svg'
 import SocialMediaIcon from '../social_media_icon/SocialMediaIcon.jsx'
 import styles from './letterGridStyles.module.css'
 
+const CHARACTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+const randomCharacter = () => {
+  const randomIndex = Math.floor(Math.random() * CHARACTERS.length)
+  return CHARACTERS[randomIndex]
+}
+
 const Letter = ({ character, isHighlighted }) => {
+  const [isHovered, setIsHovered] = useState(false)
+
   if (character[0] == '#') {
     let iconData = {
       icon: null,
@@ -35,12 +46,33 @@ const Letter = ({ character, isHighlighted }) => {
       </div>
     ) 
   }
+
+  if (isHighlighted) {
+    return (
+      <div className={styles.gridContainer}>
+        <span className={styles.highlighted}>
+          {character}
+        </span>
+      </div>
+    )
+  }
+
   return (
-    <div className={styles.gridContainer}>
-      <span className={isHighlighted ? styles.highlighted : styles.letter}>
-        {character}
+    <motion.div 
+      className={styles.gridContainer}
+      onHoverStart={() => {
+        setIsHovered(true)
+      }}
+      onHoverEnd={() => {
+        setIsHovered(false)
+      }}
+      initial={{ transform: 'scale(1)' }}
+      animate={{ transform: `scale(${ isHovered ? 2 : 1 })`}}
+      >
+      <span className={styles.letter}>
+        {randomCharacter()}
       </span>
-    </div>
+    </motion.div>
   )
 }
 

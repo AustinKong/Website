@@ -1,15 +1,22 @@
 import Header from '../../common/section_header/Header.jsx'
 import SocialMediaIcon from '../../common/social_media_icon/SocialMediaIcon.jsx'
-import styles from './aboutStyles.module.css'
+import HoverText from '../../common/hoverable_text/HoverText.jsx'
 
 import githubIcon from '../../../images/icons/githubWhite.svg'
 import linkedinIcon from '../../../images/icons/linkedinWhite.svg'
 import telegramIcon from '../../../images/icons/telegramWhite.svg'
 
+import profilePicture from '../../../images/misc/profilePicture.jpg'
+
+import nus from '../../../images/misc/NUS.jpg'
+import programming from '../../../images/misc/programming.jpg'
+
 import blob1 from '../../../images/blobs/blob1.svg'
 import blob2 from '../../../images/blobs/blob2.svg'
 
-const About = () => {
+import styles from './aboutStyles.module.css'
+
+const About = ({ cursorPosition }) => {
   const socialMediaIcons = [
     { icon: githubIcon, alt:'Github', link:'https://github.com/AustinKong' },
     { icon: linkedinIcon, alt:'LinkedIn', link:'in/hoi-tec-kong-543535294' },
@@ -23,17 +30,23 @@ const About = () => {
 
   return (
     <section>
-      <Header title='Let me introduce myself' numbering='01' />
+      <Header 
+        title='Quick intro.' 
+        numbering='01'
+        />
 
       <div className={styles.columnContainer}>
         <div className={styles.columnLeft}>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc facilisis risus elit, id laoreet sapien facilisis eget. Morbi consectetur diam eget dui congue dictum. Aenean id euismod neque. Cras iaculis imperdiet massa, commodo volutpat arcu. In eget odio ut felis efficitur euismod. Nulla facilisi.
+            Hi. I&apos;m Austin. 
+            I&apos;m a web developer and game developer based in Singapore. 
+            I&apos;m currently a year 1 student studying Information Systems in <HoverText text='National University of Singapore (NUS)' image={nus} cursorPosition={cursorPosition} />.
           </p>
           <br />
           <p>
-            Integer ut accumsan leo, et sagittis leo. Praesent vitae commodo enim, in luctus massa. Proin vitae ipsum nec nisl bibendum dapibus vel interdum nisl.
-            Integer ut accumsan leo, et sagittis leo. Praesent vitae commodo enim, in luctus massa. Proin vitae ipsum nec nisl bibendum dapibus vel interdum nisl.
+            I&apos;ve been <HoverText text='coding for more almost a decade now' image={programming} cursorPosition={cursorPosition} />. 
+            I initially started in the Scratch &quot;programming&quot; language, then moved on to working on projects in Unity.
+            Over the years, I&apos;ve built many Unity games solo and in small teams.
           </p>
 
           <div className={styles.socialMediaLinks}>
@@ -50,7 +63,7 @@ const About = () => {
         </div>
 
         <div className={styles.columnRight}>
-          <img className={styles.portrait} src='https://picsum.photos/250/300'/>
+          <img className={styles.portrait} src={profilePicture}/>
         </div>
       </div>
 

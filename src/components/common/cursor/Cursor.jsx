@@ -1,22 +1,9 @@
-import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
 import style from './cursorStyles.module.css'
 
-const Cursor = ({ cursorState }) => {
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+const Cursor = ({ cursorState, cursorPosition }) => {
   const mouseScale = cursorState === 'project_over' ? 7 : 1 
-
-  const updateMousePosition = (e) => {
-    setMousePosition({ x: e.clientX, y: e.clientY })
-  }
-
-  useEffect(() => {
-    window.addEventListener("mousemove", updateMousePosition)
-    return () => {
-      window.removeEventListener("mousemove", updateMousePosition)
-    }
-  })
 
   return (
     <motion.div 
@@ -25,8 +12,8 @@ const Cursor = ({ cursorState }) => {
         scale: 1
       }}
       animate={{ 
-        left: mousePosition.x - 5, 
-        top: mousePosition.y - 5,
+        left: cursorPosition.x - 5, 
+        top: cursorPosition.y - 5,
         scale: mouseScale
       }}
       transition={{ type: 'tween', ease: 'backOut' }}

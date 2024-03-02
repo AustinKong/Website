@@ -21,6 +21,6 @@
 
 .portrait {
   width: 100%;
-  filter: drop-shadow(0px 4px 4px #000000);
+  /* filter: drop-shadow(0px 4px 4px #000000); */
   border-radius: 7px;
 }

@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 // Components
 import Cursor from './components/common/cursor/Cursor.jsx'
@@ -14,25 +14,39 @@ import './fonts/fonts.css'
 import './defaultStyles.css'
 
 const App = () => {
-  const [cursorState, setCursorState] = useState('default')
+  /* --- Cursor management START --- */
 
-  // States { 'default', 'project_over' }
+  const [cursorState, setCursorState] = useState('default')
+  const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
+
+  const updateCursorPosition = e => {
+    setCursorPosition({ x: e.clientX, y: e.clientY })
+  }
+
+  // States { 'default', 'project_over', 'intro_over' }
   const updateCursorState = state => {
     setCursorState(state)
   }
 
+  useEffect(() => {
+    window.addEventListener("mousemove", updateCursorPosition)
+    return () => {
+      window.removeEventListener("mousemove", updateCursorPosition)
+    }
+  })
+
+  /* --- Cursor management END --- */
+
   return (
     <>
-      <Cursor cursorState={cursorState} />
+      <Cursor cursorState={cursorState} cursorPosition={cursorPosition}/>
 
       <Navbar />
-      <Hero />
       <main className='content'>
-        <About />
+        <About cursorPosition={cursorPosition} />
         <Experience />
         <Projects updateCursorState={updateCursorState} />
       </main>
-      <Contact />
     </>
   )
 }

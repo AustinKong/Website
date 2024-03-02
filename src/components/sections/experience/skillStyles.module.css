@@ -16,13 +16,20 @@
   flex: 1;
 }
 
-.h4 {
-  margin-bottom: 0.5rem;
-}
-
 .li {
   list-style-type: none;
   padding-left: 1rem;
-  color: var(--white-secondary);
+  color: var(--white-glossy);
   font-size: 0.9rem;
+}
+
+.titleContainer {
+  position: relative;
+  margin-bottom: 0.5rem;
+  height: 1.518rem;
+  overflow-y: hidden;
+}
+
+.h4 {
+  position: absolute;
 }
