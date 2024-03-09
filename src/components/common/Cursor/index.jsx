@@ -6,10 +6,10 @@ import style from './index.module.css'
 const CURSOR_RADIUS = 5
 
 const Cursor = () => {
-  const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0})
+  const [cursorState, setCursorState] = useState({ state: 'default', position: { x: 0, y: 0 }})
 
   const updateCursorPosition = (e) => {
-    setCursorPosition({ x: e.clientX, y: e.clientY })
+    setCursorState({...cursorState, position: { x: e.clientX, y: e.clientY }})
   }
 
   useEffect(() => {
@@ -23,8 +23,8 @@ const Cursor = () => {
     <motion.div
       className={style.cursor}
       animate={{
-        left: cursorPosition.x - CURSOR_RADIUS,
-        top: cursorPosition.y - CURSOR_RADIUS
+        left: cursorState.position.x - CURSOR_RADIUS,
+        top: cursorState.position.y - CURSOR_RADIUS
       }}
       transition={{ 
         type: 'tween', 
