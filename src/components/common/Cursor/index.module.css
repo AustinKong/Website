@@ -1,0 +1,12 @@
+.cursor {
+  position: fixed;
+  z-index: 1;
+  pointer-events: none;
+  border-radius: 50%;
+  background-color: var(--primary);
+}
+
+.default {
+  width: 10px;
+  height: 10px;
+}

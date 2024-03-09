@@ -1,0 +1,14 @@
+.defaultCell, .highlightCell {
+  font-family: Josefin;
+  font-size: 6rem;
+  font-weight: medium;
+  text-align: center;
+}
+
+.defaultCell {
+  color: var(--light-grey);
+}
+
+.highlightCell {
+  color: var(--black)
+}

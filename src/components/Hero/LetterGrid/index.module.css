@@ -1,0 +1,30 @@
+:root {
+  --grid-size: 4;
+}
+
+.container {
+  position: relative;
+  width: 30vw;
+}
+
+.mask, .content {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(var(--grid-size), 1fr);
+  grid-template-rows: repeat(var(--grid-size), 1fr);
+}
+
+/* Element to be hidden */
+.mask {
+  z-index: 1;
+  position: absolute;
+  mask-image: url(../../../assets/mask.svg);
+  background: var(--primary);
+  mask-repeat: no-repeat;
+  mask-size: 500px;
+}
+
+/* Element to be shown at beginning */
+.content {
+
+}
