@@ -1,52 +1,33 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
+import './App.css'
 
-// Components
-import Cursor from './components/common/cursor/Cursor.jsx'
-import Navbar from './components/common/navbar/Navbar.jsx'
-import Hero from './components/sections/hero/Hero.jsx'
-import About from './components/sections/about/About.jsx'
-import Experience from './components/sections/experience/Experience.jsx'
-import Projects from './components/sections/projects/Projects.jsx'
-import Contact from './components/sections/contact/Contact.jsx'
-
-// Styles
-import './fonts/fonts.css'
-import './defaultStyles.css'
-
-const App = () => {
-  /* --- Cursor management START --- */
-
-  const [cursorState, setCursorState] = useState('default')
-  const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
-
-  const updateCursorPosition = e => {
-    setCursorPosition({ x: e.clientX, y: e.clientY })
-  }
-
-  // States { 'default', 'project_over', 'intro_over' }
-  const updateCursorState = state => {
-    setCursorState(state)
-  }
-
-  useEffect(() => {
-    window.addEventListener("mousemove", updateCursorPosition)
-    return () => {
-      window.removeEventListener("mousemove", updateCursorPosition)
-    }
-  })
-
-  /* --- Cursor management END --- */
+function App() {
+  const [count, setCount] = useState(0)
 
   return (
     <>
-      <Cursor cursorState={cursorState} cursorPosition={cursorPosition}/>
-
-      <Navbar />
-      <main className='content'>
-        <About cursorPosition={cursorPosition} />
-        <Experience />
-        <Projects updateCursorState={updateCursorState} />
-      </main>
+      <div>
+        <a href="https://vitejs.dev" target="_blank">
+          <img src={viteLogo} className="logo" alt="Vite logo" />
+        </a>
+        <a href="https://react.dev" target="_blank">
+          <img src={reactLogo} className="logo react" alt="React logo" />
+        </a>
+      </div>
+      <h1>Vite + React</h1>
+      <div className="card">
+        <button onClick={() => setCount((count) => count + 1)}>
+          count is {count}
+        </button>
+        <p>
+          Edit <code>src/App.jsx</code> and save to test HMR
+        </p>
+      </div>
+      <p className="read-the-docs">
+        Click on the Vite and React logos to learn more
+      </p>
     </>
   )
 }
