@@ -1,4 +1,19 @@
 .hero {
   background-color: var(--white);
   height: 100svh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: fit-content;
+  display: flex;
+  gap: 1rem;
+}
+
+.title {
+  border-left: solid 1px var(--black);
+  margin-top: auto;
+  padding-left: 0.5rem;
 }

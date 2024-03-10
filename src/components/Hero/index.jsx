@@ -6,7 +6,24 @@ const Hero = () => {
     <section
       className={style.hero}
     >
-      <LetterGrid />
+      <div
+        className={style.container}
+      >
+        <LetterGrid />
+        <div
+          className={style.title}
+        >
+          <h1>
+            2024 <br />
+            Austin Kong
+          </h1>
+          <p>
+            Web Developer, Game Developer, <br />
+            Software Engineer
+          </p>
+        </div>
+
+      </div>
     </section>
   )
 }

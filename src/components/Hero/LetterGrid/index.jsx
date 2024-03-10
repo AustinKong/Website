@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import { useDispatch } from 'react-redux'
 
 import style from './index.module.css'
@@ -28,6 +28,7 @@ const LetterGrid = () => {
   const [isHovered, setIsHovered] = useState()
   const { cursorX, cursorY } = useCursorPosition();
   const maskSize = isHovered ? 300 : 10
+  const maskRef = useRef(null)
 
   return (
     <div
@@ -35,9 +36,11 @@ const LetterGrid = () => {
     >
       {/* Element to be hidden at beginning */}
       <motion.div
+        ref={maskRef}
         className={style.mask}
         animate={{
-          WebkitMaskPosition: `${cursorX - maskSize / 2}px ${cursorY - maskSize / 2}px`,
+          // If maskRef is not null, only then do we get its x and y values
+          WebkitMaskPosition: `${cursorX - maskSize / 2 - (maskRef.current ? maskRef.current.getBoundingClientRect().x : 0)}px ${cursorY - maskSize / 2 - (maskRef.current ? maskRef.current.getBoundingClientRect().y : 0)}px`,
           WebkitMaskSize: `${maskSize}px`
         }}
         transition={{

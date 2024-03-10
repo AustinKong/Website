@@ -3,12 +3,12 @@
 }
 
 .container {
-  z-index: 1;
   position: relative;
   width: 30vw;
 }
 
 .mask, .content {
+  z-index: 3;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(var(--grid-size), 1fr);
@@ -17,16 +17,13 @@
 
 /* Element to be hidden */
 .mask {
-  z-index: 2;
   position: absolute;
   mask-image: url(../../../assets/mask.svg);
   background: var(--primary);
   mask-repeat: no-repeat;
-  mask-size: 500px;
   overflow: visible
 }
 
 /* Element to be shown at beginning */
 .content {
-  z-index: 1;
 }

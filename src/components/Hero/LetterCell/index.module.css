@@ -2,7 +2,10 @@
   font-family: Josefin;
   font-size: 6rem;
   font-weight: bold;
-  text-align: center;
+  z-index: 2;
+
+  display: flex;
+  justify-content: center;
 }
 
 .defaultCell {
