@@ -15,5 +15,14 @@
 .title {
   border-left: solid 1px var(--black);
   margin-top: auto;
-  padding-left: 0.5rem;
+  padding-left: 1rem;
+}
+
+.title h1 {
+  line-height: 0.9;
+  padding-bottom: 0.7rem;
+}
+
+.title p {
+  color: var(--grey)
 }

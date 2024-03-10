@@ -28,3 +28,14 @@ ol {
   border: dotted 1px red;
   */
 }
+
+p {
+  font-size: 1rem;
+  color: var(--black)
+}
+
+h1 { 
+  font-size: 4rem;
+  line-height: 1.2;
+  color: var(--black)
+}

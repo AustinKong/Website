@@ -6,7 +6,7 @@ import style from './index.module.css'
 
 const Cursor = () => {
   const cursorState = useSelector(state => state.cursor)
-  const cursorRadius = cursorState === 'DEFAULT' ? 5 : 150
+  const cursorRadius = cursorState === 'DEFAULT' ? 5 : 200
   const { cursorX, cursorY } = useCursorPosition()
 
   return (

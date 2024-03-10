@@ -17,9 +17,9 @@ const GRID_MASK = [
 ]
 const GRID_TEXT = [
   'H', 'E', 'L', 'O',
-  'W', 'O', 'R', 'D',
-  'M', 'A', 'S', 'N',
-  'Y', 'S', 'I', 'R'
+  'W', 'O', 'R', 'L',
+  'D', 'H', 'O', 'V',
+  'E', 'R', 'M', 'E'
 ]
 
 const LetterGrid = () => {
@@ -27,7 +27,7 @@ const LetterGrid = () => {
 
   const [isHovered, setIsHovered] = useState()
   const { cursorX, cursorY } = useCursorPosition();
-  const maskSize = isHovered ? 300 : 10
+  const maskSize = isHovered ? 400 : 10
   const maskRef = useRef(null)
 
   return (
