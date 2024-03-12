@@ -1,11 +1,13 @@
 .about {
   background-color: var(--black);
+  padding: 5rem 0;
 }
 
 /* Header */
 .about header {
   display: flex;
-  align-items: end;
+  align-items: center;
+  margin-bottom: 5rem;
 }
 
 .about header h2 {
@@ -14,9 +16,10 @@
 
 /* First section: quote */
 .quote {
-  padding: 0 15vw;
+  padding: 0 18vw;
   display: flex;
-  gap: 5rem
+  gap: 5rem;
+  margin-bottom: 5rem;
 }
 
 .quote p {
@@ -33,8 +36,9 @@
 
 /* Second section: intro */
 .intro {
-  padding: 0 20vw;
+  padding: 0 25vw;
   display: flex;
+  margin-bottom: 5rem;
 }
 
 .intro aside {
@@ -44,8 +48,9 @@
 
 /* Third section: Experience */
 .experience {
-  padding: 0 20vw;
+  padding: 0 25vw;
   display: flex;
+  margin-bottom: 5rem;
 }
 
 .experience aside {
@@ -55,8 +60,9 @@
 
 /* Fourth section: Skills */
 .skills {
-  padding: 0 20vw;
+  padding: 0 25vw;
   display: flex;
+  margin-bottom: 5rem;
 }
 
 .skills aside {

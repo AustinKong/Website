@@ -23,6 +23,7 @@ const Cursor = () => {
         ease: 'backOut' 
       }}
     >
+
       {/* Cursor states 🖱️ */}
       <div
         className={style.default}

@@ -21,7 +21,6 @@
   mask-image: url(../../../assets/mask.svg);
   background: var(--primary);
   mask-repeat: no-repeat;
-  overflow: visible
 }
 
 /* Element to be shown at beginning */

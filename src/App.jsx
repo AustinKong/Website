@@ -10,10 +10,10 @@ function App() {
   return (
     <Provider store={store}>
       {/* Miscellaneous Components */}
-      <Cursor />
 
       {/* Body */}
       <header>
+        <Hero />
       </header>
       <main>
         {/* about, projects */}
