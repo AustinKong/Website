@@ -1,0 +1,15 @@
+.arrow {
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  margin: 0 1rem;
+}
+
+.arrow p {
+  color: var(--white);
+  white-space: pre-wrap;
+}
+
+.arrow svg {
+  width: 2rem;
+}

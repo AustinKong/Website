@@ -1,0 +1,65 @@
+.about {
+  background-color: var(--black);
+}
+
+/* Header */
+.about header {
+  display: flex;
+  align-items: end;
+}
+
+.about header h2 {
+  margin: auto;
+}
+
+/* First section: quote */
+.quote {
+  padding: 0 15vw;
+  display: flex;
+  gap: 5rem
+}
+
+.quote p {
+  color: var(--white);
+  font-size: 3rem;
+  width: auto;
+  display: flex;
+  align-items: center;
+}
+
+.quote img {
+  width: 30%;
+}
+
+/* Second section: intro */
+.intro {
+  padding: 0 20vw;
+  display: flex;
+}
+
+.intro aside {
+  position: absolute;
+  right: 1rem;
+}
+
+/* Third section: Experience */
+.experience {
+  padding: 0 20vw;
+  display: flex;
+}
+
+.experience aside {
+  position: absolute;
+  right: 1rem;
+}
+
+/* Fourth section: Skills */
+.skills {
+  padding: 0 20vw;
+  display: flex;
+}
+
+.skills aside {
+  position: absolute;
+  right: 1rem;
+}

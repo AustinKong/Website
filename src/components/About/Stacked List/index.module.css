@@ -1,0 +1,42 @@
+.stackedList {
+  width: 100%;
+}
+
+/* Stacked item */
+.stackedItem {
+  overflow-y: hidden;
+  font-size: 1.8rem;
+  height: 3em;
+  border-bottom: 2px solid var(--grey);
+}
+
+.shown {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  padding: 0.3rem;
+}
+
+.hidden {
+  background-color: var(--primary);
+  display: flex;
+  height: 100%;
+  align-items: center;
+  padding: 0 1rem
+}
+
+.hidden p {
+  color: var(--black);
+}
+
+.primary {
+  width: fit-content;
+  font-size: 1em;
+}
+
+.secondary {
+  width: fit-content;
+  margin-left: auto;
+  font-size: 0.5em;
+  color: var(--grey);
+}

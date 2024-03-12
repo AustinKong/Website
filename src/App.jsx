@@ -4,6 +4,7 @@ import store from './store.js'
 
 import Cursor from './components/common/Cursor'
 import Hero from './components/Hero'
+import About from './components/About'
 
 function App() {
   return (
@@ -11,10 +12,16 @@ function App() {
       {/* Miscellaneous Components */}
       <Cursor />
 
-      { /* Body */}
+      {/* Body */}
+      <header>
+      </header>
       <main>
-        <Hero />
+        {/* about, projects */}
+        <About />
       </main>
+      <footer>
+        {/* contact */}
+      </footer>
     </Provider>
   )
 }

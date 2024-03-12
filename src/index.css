@@ -14,15 +14,22 @@
 /* Normalize */
 body,
 h1,
+h2,
+h3,
+h4,
+h5,
+h6,
 p,
 ul,
 ol {
-  margin: 0;
-  padding: 0;
+  color: var(--white);
+  line-height: 1.2;
 }
 
 /* Defaults */
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   /*
   border: dotted 1px red;
@@ -31,11 +38,13 @@ ol {
 
 p {
   font-size: 1rem;
-  color: var(--black)
 }
 
 h1 { 
   font-size: 4rem;
-  line-height: 1.2;
   color: var(--black)
+}
+
+h2 {
+  font-size: 6rem;
 }
