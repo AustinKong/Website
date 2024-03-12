@@ -30,6 +30,9 @@ const LetterGrid = () => {
   const maskSize = isHovered ? 400 : 10
   const maskRef = useRef(null)
 
+  const maskX = cursorX - maskSize / 2 - (maskRef.current ? maskRef.current.getBoundingClientRect().x : 0)
+  const maskY = cursorY - maskSize / 2 - (maskRef.current ? maskRef.current.getBoundingClientRect().y : 0)
+
   return (
     <div
      className={style.container}
@@ -37,10 +40,10 @@ const LetterGrid = () => {
       {/* Element to be hidden at beginning */}
       <motion.div
         ref={maskRef}
-        className={style.mask}
+        className={style.maskContent}
         animate={{
           // If maskRef is not null, only then do we get its x and y values
-          WebkitMaskPosition: `${cursorX - maskSize / 2 - (maskRef.current ? maskRef.current.getBoundingClientRect().x : 0)}px ${cursorY - maskSize / 2 - (maskRef.current ? maskRef.current.getBoundingClientRect().y : 0)}px`,
+          WebkitMaskPosition: `${maskX}px ${maskY}px`,
           WebkitMaskSize: `${maskSize}px`
         }}
         transition={{
@@ -66,6 +69,21 @@ const LetterGrid = () => {
           ))
         }
       </motion.div>
+
+      {/* Mask to allow for overflow */}
+      <motion.div
+        className={style.mask}
+        animate={{
+          left: `${maskX}px`,
+          top: `${maskY}px`,
+          width: `${maskSize}px`,
+          height: `${maskSize}px`
+        }}
+        transition={{
+          type: 'tween',
+          ease: 'backOut'
+        }}
+      />
 
       {/* Element to be shown at beginning */}
       <div

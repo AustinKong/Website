@@ -7,8 +7,7 @@
   width: 30vw;
 }
 
-.mask, .content {
-  z-index: 3;
+.maskContent, .content {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(var(--grid-size), 1fr);
@@ -16,13 +15,23 @@
 }
 
 /* Element to be hidden */
-.mask {
+.maskContent {
+  z-index: 10;
   position: absolute;
   mask-image: url(../../../assets/mask.svg);
   background: var(--primary);
   mask-repeat: no-repeat;
 }
 
+.mask {
+  position: absolute;
+  background-color: var(--primary);
+  z-index: 7;
+  pointer-events: none;
+  border-radius: 50%;
+}
+
 /* Element to be shown at beginning */
 .content {
+  z-index: 5;
 }
