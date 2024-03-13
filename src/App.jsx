@@ -15,6 +15,7 @@ function App() {
 
       {/* Body */}
       <header>
+        <Hero />
       </header>
       <main>
         {/* about, projects */}
