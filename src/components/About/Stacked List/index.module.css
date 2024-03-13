@@ -25,11 +25,12 @@
   padding: 0 1rem
 }
 
-.hidden p {
+.hidden .primary {
   color: var(--black);
 }
 
 .primary {
+  font-weight: normal;
   width: fit-content;
   font-size: 1em;
 }

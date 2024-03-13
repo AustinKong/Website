@@ -1,0 +1,21 @@
+.projects {
+  background-color: var(--black);
+  padding: 5rem 0;
+}
+
+/* Header */
+.projects header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+.projects header h2 {
+  margin: auto;
+}
+
+.projectsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}

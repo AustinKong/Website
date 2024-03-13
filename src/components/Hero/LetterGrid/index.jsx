@@ -51,7 +51,7 @@ const LetterGrid = () => {
           ease: 'backOut'
         }}
         onMouseEnter={() => {
-          dispatch(setState('HOVER_MASK'))
+          dispatch(setState('HIDDEN'))
           setIsHovered(true)
         }}
         onMouseLeave={() => {

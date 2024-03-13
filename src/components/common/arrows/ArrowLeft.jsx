@@ -2,11 +2,16 @@ import style from './index.module.css'
 
 const ArrowLeft = ({ text }) => {
   return (
-    <aside className={style.arrow}>
-      <p>
+    <aside 
+      className={style.arrow}
+    >
+      <p
+        className={style.rightAlign}
+      >
         {text}
       </p>
       <svg
+        className={style.rightAlign}
         viewBox='0 0 28 8'
       >
         <path

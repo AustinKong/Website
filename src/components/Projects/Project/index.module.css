@@ -1,0 +1,30 @@
+.project {
+  padding: 0 23vw;
+  display: flex;
+}
+
+.project aside {
+  position: absolute;
+  right: 1rem;
+}
+
+/* Container */
+.projectContainer {
+}
+
+/* Header section */
+.header {
+  display: flex;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.tag {
+  display: inline-block;
+  color: var(--grey);
+}
+
+/* Content section */

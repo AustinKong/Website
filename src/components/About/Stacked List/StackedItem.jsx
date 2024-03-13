@@ -22,11 +22,11 @@ const StackedItem = ({ primary, secondary, hiddenPrimary, hiddenSecondary }) => 
           transform: `${ isHovered ? 'translateY(-100%)' : 'translateY(0)'}`
         }}
       >
-        <p
+        <h3
           className={style.primary}
         >
           {primary}
-        </p>
+        </h3>
         <p
           className={style.secondary}
         >
@@ -44,11 +44,11 @@ const StackedItem = ({ primary, secondary, hiddenPrimary, hiddenSecondary }) => 
           transform: `${ isHovered ? 'translateY(-100%)' : 'translateY(0)'}`
         }}
       >
-        <p
+        <h3
           className={style.primary}
         >
           {hiddenPrimary}
-        </p>
+        </h3>
         <p
           className={style.secondary}
         >
