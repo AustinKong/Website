@@ -2,9 +2,10 @@
   font-family: Josefin, sans-serif;
   font-size: 6rem;
   font-weight: bold;
+  line-height: 1;
   z-index: 2;
 
-  display: flex;
+  display: inline-flex;
   justify-content: center;
 }
 

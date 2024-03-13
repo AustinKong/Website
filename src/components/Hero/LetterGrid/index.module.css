@@ -12,6 +12,9 @@
   display: grid;
   grid-template-columns: repeat(var(--grid-size), 1fr);
   grid-template-rows: repeat(var(--grid-size), 1fr);
+  /* Needed because the font has weird whitespace underneath */
+  padding-top: 1.5rem;
+  margin-bottom: -1.5rem;
 }
 
 /* Element to be hidden */
@@ -21,14 +24,6 @@
   mask-image: url(../../../assets/mask.svg);
   background: var(--primary);
   mask-repeat: no-repeat;
-}
-
-.mask {
-  position: absolute;
-  background-color: var(--primary);
-  z-index: 7;
-  pointer-events: none;
-  border-radius: 50%;
 }
 
 /* Element to be shown at beginning */

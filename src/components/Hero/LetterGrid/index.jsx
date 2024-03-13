@@ -44,7 +44,7 @@ const LetterGrid = () => {
         animate={{
           // If maskRef is not null, only then do we get its x and y values
           WebkitMaskPosition: `${maskX}px ${maskY}px`,
-          WebkitMaskSize: `${maskSize}px`
+          WebkitMaskSize: `${maskSize}px`,
         }}
         transition={{
           type: 'tween',
@@ -69,21 +69,6 @@ const LetterGrid = () => {
           ))
         }
       </motion.div>
-
-      {/* Mask to allow for overflow */}
-      <motion.div
-        className={style.mask}
-        animate={{
-          left: `${maskX}px`,
-          top: `${maskY}px`,
-          width: `${maskSize}px`,
-          height: `${maskSize}px`
-        }}
-        transition={{
-          type: 'tween',
-          ease: 'backOut'
-        }}
-      />
 
       {/* Element to be shown at beginning */}
       <div
