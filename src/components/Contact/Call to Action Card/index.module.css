@@ -1,0 +1,35 @@
+.callToAction {
+  grid-column: span 2;
+  grid-row: span 2;
+  width: 100%;
+}
+
+.container {
+  margin: 0 40% 0 auto;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.title {
+  font-size: 4rem;
+}
+
+.email {
+  color: var(--grey);
+  font-size: 1.2rem;
+}
+
+.socials {
+  list-style: none;
+}
+
+.socials li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.social {
+  width: 2.5rem;
+}

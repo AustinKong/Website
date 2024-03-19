@@ -6,6 +6,7 @@ import Cursor from './components/common/Cursor'
 import Hero from './components/Hero'
 import About from './components/About'
 import Projects from './components/Projects'
+import Contact from './components/Contact'
 
 function App() {
   return (
@@ -18,12 +19,11 @@ function App() {
         <Hero />
       </header>
       <main>
-        {/* about, projects */}
         <About />
         <Projects />
       </main>
       <footer>
-        {/* contact */}
+        <Contact />
       </footer>
     </Provider>
   )
