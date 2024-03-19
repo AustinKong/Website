@@ -4,10 +4,12 @@
 
 .container {
   position: relative;
-  width: 30vw;
+  width: fit-content;
 }
 
-.maskContent, .content {
+.maskContent,
+.content,
+.backup {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(var(--grid-size), 1fr);
@@ -29,4 +31,19 @@
 /* Element to be shown at beginning */
 .content {
   z-index: 5;
+}
+
+.backup {
+  display: none;
+}
+
+@media only screen and (max-width: 992px) {
+  .backup {
+    display: grid;
+  }
+
+  .content,
+  .maskContent {
+    display: none;
+  }
 }

@@ -15,7 +15,7 @@ const CallToActionCard = () => {
         <h3
           className={style.title}
         >
-          Let&apos;s <br />
+          Let&apos;s
           Talk!
         </h3>
         <a
@@ -27,7 +27,6 @@ const CallToActionCard = () => {
         <div
           className={style.socials}
         >
-
             <Linkedin />
             <Github />
             <Telegram />

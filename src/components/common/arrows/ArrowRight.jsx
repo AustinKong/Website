@@ -2,7 +2,9 @@ import style from './index.module.css'
 
 const ArrowRight = ({ text }) => {
   return (
-    <aside className={style.arrow}>
+    <aside 
+      className={style.arrowRight}
+    >
       <p>
         {text}
       </p>

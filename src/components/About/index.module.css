@@ -16,11 +16,12 @@
   margin: auto;
 }
 
+
 /* First section: quote */
 .quote {
-  padding: 0 18vw;
+  padding: 0 16vw;
   display: flex;
-  gap: 5rem;
+  gap: 2vw;
   margin-bottom: 5rem;
 }
 
@@ -34,6 +35,7 @@
 
 .quote img {
   width: 30%;
+  object-fit: cover;
 }
 
 /* Second section: intro */
@@ -70,4 +72,61 @@
 .skills aside {
   position: absolute;
   right: 1rem;
+}
+
+@media only screen and (max-width: 576px) {
+  .quote {
+    padding: 0 6vw;
+    flex-direction: column;
+    gap: 5rem;
+  }
+
+  .quote p {
+    text-align: center;
+  }
+
+  .quote img {
+    width: 70%;
+    margin: auto;
+  }
+
+  .intro,
+  .experience,
+  .skills {
+    padding: 0 5vw;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .quote {
+    padding: 0 12vw;
+    flex-direction: column;
+    gap: 5rem;
+  }
+
+  .quote img {
+    width: 70%;
+    margin: auto;
+  }
+
+  .intro,
+  .experience,
+  .skills {
+    padding: 0 15vw;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .quote {
+    padding: 0 8vw;
+  }
+  
+  .intro,
+  .experience,
+  .skills {
+    padding: 0 20vw;
+  }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
 }

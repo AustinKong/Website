@@ -31,7 +31,7 @@ const Contact = () => {
           link=''
         />
 
-        <div />
+        <div className={style.empty} />
         
         <LinkCard
           title='Projects'
@@ -41,10 +41,12 @@ const Contact = () => {
 
         <LocationCard />
 
-        <div />
-        <div />
+        <div className={style.empty} />
+        <div className={style.empty} />
 
         <AvailabilityCard />
+
+        <div className={style.empty} />
       </div>
 
       <p

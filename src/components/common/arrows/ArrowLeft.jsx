@@ -3,7 +3,7 @@ import style from './index.module.css'
 const ArrowLeft = ({ text }) => {
   return (
     <aside 
-      className={style.arrow}
+      className={style.arrowLeft}
     >
       <p
         className={style.rightAlign}

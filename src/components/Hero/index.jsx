@@ -14,8 +14,8 @@ const Hero = () => {
           className={style.title}
         >
           <h1>
-            2024 <br />
-            Austin Kong
+            Austin Kong <br />
+            2024
           </h1>
           <p>
             Web Developer, Game Developer, <br />

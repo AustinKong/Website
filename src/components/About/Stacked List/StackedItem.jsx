@@ -11,6 +11,7 @@ const StackedItem = ({ primary, secondary, hiddenPrimary, hiddenSecondary }) => 
       className={style.stackedItem}
       onHoverStart={ () => setIsHovered(true) }
       onHoverEnd={ () => setIsHovered(false) }
+      onTap={ () => setIsHovered(!isHovered) }
     >
       {/* Shown at start */}
       <motion.div

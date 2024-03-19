@@ -13,6 +13,7 @@
 }
 
 .title {
+  width: fit-content;
   border-left: solid 1px var(--black);
   margin-top: auto;
   padding-left: 1rem;
@@ -25,4 +26,27 @@
 
 .title p {
   color: var(--grey)
+}
+
+@media only screen and (max-width: 992px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .title {
+    border: none;
+    padding: 0;
+    width: 100%;
+    margin-top: 1.5rem;
+  }
+
+  .title h1 {
+    font-weight: 500;
+    font-size: 1.7rem;
+    text-align: center;
+  }
+
+  .title p {
+    display: none;
+  }
 }

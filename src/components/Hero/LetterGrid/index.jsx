@@ -84,6 +84,21 @@ const LetterGrid = () => {
           ))
         }
       </div>
+
+      {/* Element to be shown for non-interactive devices */}
+      <div
+        className={style.backup}
+      >
+        {
+          GRID_MASK.map((letter, index) => (
+            <LetterCell
+              key={index}
+              character={letter === '*' ? GRID_TEXT[index] : GRID_MASK[index]}
+              highlight={letter === '*' ? false : true}
+            />
+          ))
+        }
+      </div>
     </div>
   )
 }
