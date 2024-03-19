@@ -44,3 +44,7 @@
 .description {
   color: var(--grey);
 }
+
+.title {
+  font-weight: 600;
+}
