@@ -34,6 +34,11 @@
   width: inherit;
 }
 
+.ellipse {
+  position: absolute;
+  transform: translate(-30%, -10%);
+}
+
 @media only screen and (max-width: 576px) {
   .callToAction {
     grid-column: span 2;
@@ -51,6 +56,10 @@
 
   .socials {
     margin: auto;
+  }
+
+  .ellipse {
+    display: none;
   }
 }
 
@@ -72,5 +81,9 @@
 
   .socials {
     margin: auto;
+  }
+
+  .ellipse {
+    display: none;
   }
 }

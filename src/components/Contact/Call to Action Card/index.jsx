@@ -1,4 +1,5 @@
 import style from './index.module.css'
+import ellipse from '../../../assets/ellipse.png'
 
 import Linkedin from './socials/Linkedin.jsx'
 import Github from './socials/Github.jsx'
@@ -9,6 +10,10 @@ const CallToActionCard = () => {
     <div
       className={style.callToAction}
     >
+      <img
+        src={ellipse}
+        className={style.ellipse}
+      />
       <div
         className={style.container}
       >
