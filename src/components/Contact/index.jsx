@@ -1,12 +1,17 @@
+import { useMediaQuery } from 'react-responsive'
+
 import ArrowRight from '../common/arrows/ArrowRight.jsx'
 import CallToActionCard from './Call to Action Card'
 import AvailabilityCard from './Availability Card'
 import LinkCard from './Link Card'
 import LocationCard from './Location Card'
+import QuoteCard from './Quote Card'
 
 import style from './index.module.css'
 
 const Contact = () => {
+  const isDesktop = useMediaQuery({ minWidth: 769 })
+
   return (
     <section
       className={style.contact}
@@ -42,7 +47,14 @@ const Contact = () => {
         <LocationCard />
 
         <div className={style.empty} />
-        <div className={style.empty} />
+
+        {
+          isDesktop ? (
+            <QuoteCard />
+          ) : (
+            <div className={style.empty} />
+          )
+        }
 
         <AvailabilityCard />
 
