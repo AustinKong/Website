@@ -11,6 +11,7 @@ const Arrow = ({ link }) => {
 
   return (
     <motion.a
+      target='_blank'
       className={style.arrow}
       href={link}
       initial={{

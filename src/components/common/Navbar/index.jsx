@@ -33,7 +33,7 @@ const Navbar = () => {
         className={style.home} 
         style={active ? { color: 'var(--white)' } : {}}
       >
-        Austin Kong
+        AUSTIN KONG
       </a>
       <a
         href="#About"

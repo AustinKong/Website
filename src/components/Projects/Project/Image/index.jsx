@@ -11,12 +11,14 @@ const Image = ({ image, link }) => {
     margin: '2rem 0',
     width: '100%',
     overflow: 'hidden',
-    display: 'inline-block'
+    display: 'inline-block',
+    height: 'fit-content'
   }
 
   return (
     <motion.a
       href={link}
+      target='_blank'
       style={style}
       initial={{
         borderRadius: '5px'

@@ -1,6 +1,14 @@
 import style from '../index.module.css'
 
+const QUOTES = [
+  ''
+]
+
 const QuoteCard = () => {
+  const getQuote = () => {
+    QUOTES[Math.floor(Math.random() * QUOTES.length)]
+  }
+
   return (
     <div
       className={style.card}
@@ -8,12 +16,12 @@ const QuoteCard = () => {
       <h3
         className={style.title}
       >
-        A Random Quote
+        Quote
       </h3>
       <p
         className={style.description}
       >
-        Lorem ipsum lasldljasldjfkj
+        {getQuote()}
       </p>
     </div>
   )
