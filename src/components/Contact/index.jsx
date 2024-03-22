@@ -33,8 +33,8 @@ const Contact = () => {
       
         <LinkCard
           title='About'
-          description='hello worldtest'
-          link=''
+          description='Explore my background, skills, and journey. Click here to get to know me better'
+          link='#About'
         />
 
         <div className={style.empty} />
@@ -42,7 +42,7 @@ const Contact = () => {
         <LinkCard
           title='Projects'
           description='Here is a curated list of my projects that I am very proud of. Be sure to check them out!'
-          link=''
+          link='#Works'
         />
 
         <LocationCard />

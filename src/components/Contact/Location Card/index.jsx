@@ -41,7 +41,7 @@ const LocationCard = () => {
       <p
         className={style.description}
       >
-        Here are my current whereabouts
+        Here are my current whereabouts.
       </p>
     </div>
   )

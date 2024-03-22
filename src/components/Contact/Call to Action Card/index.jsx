@@ -1,3 +1,5 @@
+import { motion } from 'framer-motion'
+
 import style from './index.module.css'
 import ellipse from '../../../assets/ellipse.png'
 
@@ -14,8 +16,12 @@ const CallToActionCard = () => {
         src={ellipse}
         className={style.ellipse}
       />
-      <div
+      <motion.div
         className={style.container}
+        initial={{ opacity: 0, transform: 'translateY(30%)' }}
+        whileInView={{ opacity: 1, transform: 'translateY(0)' }}
+        transition={{ duration: 0.4, ease: 'backOut', delay: 0.2 }}
+        viewport={{ once: true }}
       >
         <h3
           className={style.title}
@@ -36,7 +42,7 @@ const CallToActionCard = () => {
             <Github />
             <Telegram />
         </div>
-      </div>
+      </motion.div>
     </div>
   )
 }

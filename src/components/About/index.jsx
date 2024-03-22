@@ -1,5 +1,3 @@
-import { motion } from 'framer-motion'
-
 import style from './index.module.css'
 
 import ArrowLeft from '../common/arrows/ArrowLeft.jsx'
@@ -10,16 +8,16 @@ import StackedList from './Stacked List/index.jsx'
 
 const EXPERIENCE = {
   primary: ['National University of Singapore', 'Pin Hwa High School'],
-  secondary: ['Jan 2024', 'Feb 2024'],
-  hiddenPrimary: ['Stonks', 'Bonks'],
-  hiddenSecondary: ['Sla', 'Vakia']
+  secondary: ['Aug 2023 - Present', 'Feb 2023 - May 2023'],
+  hiddenPrimary: ['Computing Student', 'IT Support Technician'],
+  hiddenSecondary: ['Fixing bugs', 'Replacing HDMI cables']
 }
 
 const SKILLS = {
-  primary: ['National University of Singapore', 'Pin Hwa High School'],
-  secondary: ['Jan 2024', 'Feb 2024'],
-  hiddenPrimary: ['Stonks', 'Bonks'],
-  hiddenSecondary: ['Sla', 'Vakia']
+  primary: ['Full Stack Development', 'Game Development', 'Software Development'],
+  secondary: ['UI/UX Design, Frontend, Backend', 'Programming, Graphics, Animation', 'Designing, Testing, Deploying'],
+  hiddenPrimary: ['React, Express, MongoDB', 'Unity, C#, Aseprite', 'Electron, NodeJS, React'],
+  hiddenSecondary: ['5+ websites built', '10+ games made', '1 Electron project']
 }
 
 const About = () => {
@@ -40,7 +38,7 @@ const About = () => {
 
       <div className={style.quote}>
         <p>
-          I don&apos;t just create websites, I create experiences.
+          I strive to craft captivating digital experiences that users won&apos;t forget.
         </p>
         <img 
           src={pfp}
@@ -49,9 +47,9 @@ const About = () => {
 
       <div className={style.intro}>
         <p>
-          Welcome to my corner of the internet! I'm [Your Name], a [Your Profession or Passion] based in [Your Location]. Here, you'll find a blend of my experiences, expertise, and musings on [Your Interests or Specializations].
+          Hi, I am Austin, a developer based in Singapore. I am a computing student (major in Information Systems, minor in Communications and New Media) at the National University of Singapore (NUS).
           <br /><br />
-          My name is Ochuko Pedro and I am a Software Engineer. I do fullstack development but I love building interactive user experiences on the web. I am a JavaScript and TypeScript advocate and a lover of CSS. I have recently taken a likin
+          In my free time, I like building websites, video games and software projects (like this one!). I believe that coding should be used to create meaningful and fun experiences for people to enjoy, not just to solve problems!
         </p>
         <ArrowLeft
           text='BIO'

@@ -4,14 +4,37 @@
   top: 0;
   display: flex;
   padding: 1rem;
+  padding-right: 2rem;
+  z-index: 1;
 }
 
 .navbar a {
   text-decoration: none;
+  color: inherit;
+  padding: 10px;
+}
+
+.link:hover {
+  background-color: var(--primary);
   color: var(--black);
-  margin: 0 1rem;
+  transform: scale(1.1);
 }
 
 .home {
-  margin-right: auto!important;
+  margin-right: auto;
+}
+
+.link {
+  border: 1.5px solid;
+  border-color: inherit;
+  border-radius: 9999px;
+  margin: 0 1rem;
+  transition: 0.3s;
+  transition-property: background-color, color, transform;
+}
+
+@media only screen and (max-width: 576px) {
+  .navbar {
+    display: none;
+  }
 }

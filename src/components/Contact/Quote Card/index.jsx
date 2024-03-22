@@ -8,7 +8,7 @@ const QuoteCard = () => {
       <h3
         className={style.title}
       >
-        Quote of the Day
+        A Random Quote
       </h3>
       <p
         className={style.description}

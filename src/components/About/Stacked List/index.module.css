@@ -33,6 +33,7 @@
   font-weight: normal;
   width: fit-content;
   font-size: 1em;
+  max-width: 70%;
 }
 
 .secondary {
@@ -40,14 +41,12 @@
   margin-left: auto;
   font-size: 0.5em;
   color: var(--grey);
+  text-align: end;
+  max-width: 30%;
 }
 
 @media only screen and (max-width: 576px) {
   .stackedItem {
     font-size: 1.2rem;
-  }
-
-  .primary {
-    max-width: 80%;
   }
 }
