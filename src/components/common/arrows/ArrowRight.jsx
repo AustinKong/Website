@@ -1,9 +1,15 @@
+import { motion } from 'framer-motion'
+
 import style from './index.module.css'
 
 const ArrowRight = ({ text }) => {
   return (
-    <aside 
+    <motion.aside 
       className={style.arrowRight}
+      initial={{ transform: 'translateX(-80%)' }}
+      whileInView={{ transform: 'translateX(0)' }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5, ease: 'easeOut' }}
     >
       <p>
         {text}
@@ -16,7 +22,7 @@ const ArrowRight = ({ text }) => {
           fill="var(--white)"
         />
       </svg>
-    </aside>
+    </motion.aside>
   )
 }
 

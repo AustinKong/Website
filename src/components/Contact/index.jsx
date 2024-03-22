@@ -15,6 +15,7 @@ const Contact = () => {
   return (
     <section
       className={style.contact}
+      id="Contact"
     >
       <header>
         <ArrowRight

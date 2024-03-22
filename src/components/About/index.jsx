@@ -1,3 +1,5 @@
+import { motion } from 'framer-motion'
+
 import style from './index.module.css'
 
 import ArrowLeft from '../common/arrows/ArrowLeft.jsx'
@@ -24,8 +26,10 @@ const About = () => {
   return (
     <section 
       className={style.about}
+      id="About"
       >
-      <header>
+      <header
+      >
         <ArrowRight 
           text={`GET TO \nKNOW ME`}
         />

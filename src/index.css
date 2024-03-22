@@ -11,6 +11,10 @@
   font-size: clamp(16px, 1.2vw, 24px);
 }
 
+html {
+  overflow-x: hidden;
+}
+
 /* Normalize */
 body,
 h1,

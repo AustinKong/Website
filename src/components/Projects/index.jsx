@@ -24,7 +24,10 @@ const PROJECTS = [
 
 const Projects = () => {
   return (
-    <section className={style.projects}>
+    <section 
+      className={style.projects}
+      id="Works" 
+    >
       <header>
         <ArrowRight 
           text={`WHAT I \nHAVE DONE`}

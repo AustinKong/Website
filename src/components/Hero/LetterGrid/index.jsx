@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import { useState, useRef } from 'react'
 import { useDispatch } from 'react-redux'
+import { useMediaQuery } from 'react-responsive'
 
 import style from './index.module.css'
 
@@ -23,6 +24,7 @@ const GRID_TEXT = [
 ]
 
 const LetterGrid = () => {
+  const isDesktop = useMediaQuery({ minWidth: 992 })
   const dispatch = useDispatch()
 
   const [isHovered, setIsHovered] = useState()
@@ -35,70 +37,98 @@ const LetterGrid = () => {
 
   return (
     <div
-     className={style.container}
+      className={style.container}
     >
-      {/* Element to be hidden at beginning */}
-      <motion.div
-        ref={maskRef}
-        className={style.maskContent}
-        animate={{
-          // If maskRef is not null, only then do we get its x and y values
-          WebkitMaskPosition: `${maskX}px ${maskY}px`,
-          WebkitMaskSize: `${maskSize}px`,
-        }}
-        transition={{
-          type: 'tween',
-          ease: 'backOut'
-        }}
-        onMouseEnter={() => {
-          dispatch(setState('HIDDEN'))
-          setIsHovered(true)
-        }}
-        onMouseLeave={() => {
-          dispatch(setState('DEFAULT'))
-          setIsHovered(false)
-        }}
-      >
-        {
-          GRID_MASK.map((letter, index) => (
-            <LetterCell
-              key={index}
-              character={letter === '*' ? GRID_TEXT[index] : GRID_MASK[index]}
-              highlight={letter === '*' ? false : true}
-            />
-          ))
-        }
-      </motion.div>
+      {/* Hide for non desktop */}
+      {
+        isDesktop && (
+          <>
+            {/* Element to be hidden at beginning */}
+            <motion.div
+              ref={maskRef}
+              className={style.maskContent}
+              animate={{
+                // If maskRef is not null, only then do we get its x and y values
+                WebkitMaskPosition: `${maskX}px ${maskY}px`,
+                WebkitMaskSize: `${maskSize}px`,
+              }}
+              transition={{
+                type: 'tween',
+                ease: 'backOut'
+              }}
+              onMouseEnter={() => {
+                dispatch(setState('HIDDEN'))
+                setIsHovered(true)
+              }}
+              onMouseLeave={() => {
+                dispatch(setState('DEFAULT'))
+                setIsHovered(false)
+              }}
+            >
+              {
+                GRID_MASK.map((letter, index) => (
+                  <LetterCell
+                    key={index}
+                    character={letter === '*' ? GRID_TEXT[index] : GRID_MASK[index]}
+                    highlight={letter === '*' ? false : true}
+                  />
+                ))
+              }
+            </motion.div>
 
-      {/* Element to be shown at beginning */}
-      <div
-        className={style.content}
-      >
-        {
-          GRID_TEXT.map((letter, index) => (
-            <LetterCell 
-              key={index}
-              character={letter}
-              highlight={false}
-            />
-          ))
-        }
-      </div>
+            {/* Element to be shown at beginning */}
+            <div
+              className={style.content}
+            >
+              {
+                GRID_TEXT.map((letter, index) => (
+                  <motion.div
+                    key={index}
 
-      {/* Element to be shown for non-interactive devices */}
-      <div
-        className={style.backup}
-      >
-        {
-          GRID_MASK.map((letter, index) => (
-            <LetterCell
-              key={index}
-              character={letter === '*' ? GRID_TEXT[index] : GRID_MASK[index]}
-              highlight={letter === '*' ? false : true}
-            />
-          ))
-        }
-      </div>
+                    initial={{ opacity: 0, transform: 'translateY(30%)' }}
+                    animate={{ opacity: 1, transform: 'translateY(0)' }}
+                    transition={{ duration: 0.3, delay: Math.max(0.3, Math.random()) * 0.4, ease: 'backOut' }}
+                  >
+                    <LetterCell
+                      character={letter}
+                      highlight={false}
+                    />
+                  </motion.div>
+                ))
+              }
+            </div>
+          </>
+        )
+      }
+
+      {/* Hide for desktop */}
+      {
+        !isDesktop && (
+          <>
+            {/* Element to be shown for non-interactive devices */}
+            <div
+              className={style.backup}
+            >
+              {
+                GRID_MASK.map((letter, index) => (
+                  <motion.div
+                    key={index}
+                    initial={{ opacity: 0, transform: 'translateY(30%)' }}
+                    animate={{ opacity: 1, transform: 'translateY(0)' }}
+                    transition={{ duration: 0.3, delay: Math.max(0.3, Math.random()) * 0.4, ease: 'backOut' }}
+                  >
+                    <LetterCell
+                      key={index}
+                      character={letter === '*' ? GRID_TEXT[index] : GRID_MASK[index]}
+                      highlight={letter === '*' ? false : true}
+                    />
+                  </motion.div>
+                ))
+              }
+            </div>
+          </>
+        )
+      }
     </div>
   )
 }
