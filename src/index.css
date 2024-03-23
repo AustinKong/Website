@@ -16,6 +16,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  position: relative
+}
+
 /* Normalize */
 body,
 h1,
