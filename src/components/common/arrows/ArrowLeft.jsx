@@ -6,8 +6,8 @@ const ArrowLeft = ({ text }) => {
   return (
     <motion.aside 
       className={style.arrowLeft}
-      initial={{ transform: 'translateY(80%)' }}
-      whileInView={{ transform: 'translateY(0)' }}
+      initial={{ transform: 'translateX(80%)' }}
+      whileInView={{ transform: 'translateX(0)' }}
       viewport={{ once: true }}
       transition={{ duration: 0.7, ease: 'easeOut' }}
     >
