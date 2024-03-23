@@ -5,7 +5,6 @@ import CallToActionCard from './Call to Action Card'
 import AvailabilityCard from './Availability Card'
 import LinkCard from './Link Card'
 import LocationCard from './Location Card'
-import QuoteCard from './Quote Card'
 
 import style from './index.module.css'
 
@@ -49,15 +48,20 @@ const Contact = () => {
 
         <div className={style.empty} />
 
+        <LinkCard
+          title='Gallery'
+          description='Here is a gallery of all my hobbies and projects, check them out.'
+          link='#Works'
+        />
+
         {
           isDesktop ? (
-            <QuoteCard />
+            <AvailabilityCard />
           ) : (
             <div className={style.empty} />
           )
         }
 
-        <AvailabilityCard />
 
         <div className={style.empty} />
       </div>
