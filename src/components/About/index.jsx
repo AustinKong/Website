@@ -47,7 +47,7 @@ const About = () => {
 
       <div className={style.intro}>
         <p>
-          Hi, I am Austin, a developer based in Singapore. I am a computing student (major in Information Systems, minor in Communications and New Media) at the National University of Singapore (NUS).
+          Hi, I am Austin, a developer based in Singapore. I am a computing student (major in Information Systems, minor in Interactive Media Development) at the National University of Singapore (NUS).
           <br /><br />
           In my free time, I like building websites, video games and software projects (like this one!). I believe that coding should be used to create meaningful and fun experiences for people to enjoy, not just to solve problems!
         </p>
