@@ -6,7 +6,7 @@ Simple portfoliio website version 4.0 (active)!
 ![Image](landing.png)
 ### Description
 <!--In depth description, add more subtitles as necessary-->
-This is a simple portfolio website build to display my projects. This is version 3.0, you may view the updated version [here](https://austinkong.github.io/Website/)
+This is a simple portfolio website built to display my projects. This is version 3.0, you may view the updated version [here](https://austinkong.github.io/Website/)
 ### Technology
 <!--The tech stack used, with simple descriptions of what each thing does-->
 * React: Structure of the website
