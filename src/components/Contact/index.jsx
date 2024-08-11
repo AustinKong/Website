@@ -49,9 +49,9 @@ const Contact = () => {
         <div className={style.empty} />
 
         <LinkCard
-          title='Gallery'
-          description='Here is a gallery of all my hobbies and projects, check them out.'
-          link='#Works'
+          title='Community'
+          description='Here are some of the community projects that I have been involved in.'
+          link='#Community'
         />
 
         {

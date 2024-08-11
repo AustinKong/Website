@@ -17,7 +17,7 @@ const SKILLS = {
   primary: ['Full Stack Development', 'Game Development', 'Software Development'],
   secondary: ['UI/UX Design, Frontend, Backend', 'Programming, Graphics, Animation', 'Designing, Testing, Deploying'],
   hiddenPrimary: ['React, Express, MongoDB', 'Unity, C#, Aseprite', 'Electron, NodeJS, React'],
-  hiddenSecondary: ['5+ websites built', '10+ games made', '1 Electron project']
+  hiddenSecondary: ['5+ websites built', '10+ games made', '2 Electron projects']
 }
 
 const About = () => {

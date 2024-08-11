@@ -11,7 +11,7 @@ const Linkedin = () => {
 
   return (
     <motion.a
-      href='https://www.linkedin.com/in/hoi-tec-kong-543535294/'
+      href='https://www.linkedin.com/in/konghoitec/'
       target='_blank'
       className={style.social}
       initial={{

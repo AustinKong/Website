@@ -6,7 +6,7 @@ import Navbar from './components/common/Navbar'
 import Cursor from './components/common/Cursor'
 import Hero from './components/Hero'
 import About from './components/About'
-import Projects from './components/Projects'
+import { Projects, Community } from './components/Projects'
 import Contact from './components/Contact'
 
 function App() {
@@ -23,6 +23,7 @@ function App() {
       <main>
         <About />
         <Projects />
+        <Community />
       </main>
       <footer>
         <Contact />
