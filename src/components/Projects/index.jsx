@@ -10,7 +10,7 @@ import typing from '../../assets/images/projects/Typing.png'
 import anime from '../../assets/images/projects/Anime.png'
 
 import rag from '../../assets/images/projects/RAG.jpg'
-import kewoc from '../../assets/images/projects/KEWOC.png'
+import kewoc from '../../assets/images/404.png'
 
 const PROJECTS = [
   {
