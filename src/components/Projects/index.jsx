@@ -3,13 +3,13 @@ import Project from './Project'
 
 import style from './index.module.css'
 
-import stucado from '../../assets/images/projects/Stucado.png'
-import eden from '../../assets/images/projects/Eden.png'
-import helios from '../../assets/images/projects/Helios.png'
-import typing from '../../assets/images/projects/Typing.png'
-import anime from '../../assets/images/projects/Anime.png'
+import stucado from '../../assets/images/projects/Stucado-min.png'
+import eden from '../../assets/images/projects/Eden-min.png'
+import helios from '../../assets/images/projects/Helios-min.png'
+import typing from '../../assets/images/projects/Typing-min.png'
+import anime from '../../assets/images/projects/Anime-min.png'
 
-import rag from '../../assets/images/projects/RAG.jpg'
+import rag from '../../assets/images/projects/RAG2-min.jpeg'
 import kewoc from '../../assets/images/404.png'
 
 const PROJECTS = [
