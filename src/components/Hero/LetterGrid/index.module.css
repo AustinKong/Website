@@ -22,11 +22,25 @@
 
 /* Element to be hidden */
 .maskContent {
-  z-index: 10;
   position: absolute;
-  mask-image: url(../../../assets/mask.svg);
-  background: var(--primary);
-  mask-repeat: no-repeat;
+  z-index: 0;
+}
+
+.content {
+  opacity: 0;
+}
+
+@supports (mask-image: url()) {
+  .maskContent {
+    z-index: 10;
+    mask-image: url(../../../assets/mask.svg);
+    background: var(--primary);
+    mask-repeat: no-repeat;
+  }
+
+  .content {
+    opacity: 1;
+  }
 }
 
 /* Element to be shown at beginning */

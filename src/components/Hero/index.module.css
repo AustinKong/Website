@@ -1,9 +1,15 @@
 .hero {
   background-color: var(--white);
-  height: 100svh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@supports(height: 100svh) {
+  .hero {
+    height: 100svh;
+  }
 }
 
 .container {
