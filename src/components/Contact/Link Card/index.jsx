@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 
 import style from '../index.module.css'
 
-const LinkCard = ({ title, description, link }) => {
+const LinkCard = ({ title, description, link, blank = false }) => {
   const dispatch = useDispatch()
 
   return (
@@ -22,6 +22,7 @@ const LinkCard = ({ title, description, link }) => {
           textDecoration: 'none'
         }}
         href={link}
+        target={blank ? 'blank' : 'self'}
       >
         <h3
           className={style.title}

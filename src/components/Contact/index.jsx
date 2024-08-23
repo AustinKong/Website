@@ -40,8 +40,8 @@ const Contact = () => {
         
         <LinkCard
           title='Projects'
-          description='Here is a curated list of my projects that I am very proud of. Be sure to check them out!'
-          link='#Works'
+          description='Here is all the source code to my other works, be sure to check them out!'
+          link='https://github.com/AustinKong?tab=repositories'
         />
 
         <LocationCard />
@@ -52,6 +52,7 @@ const Contact = () => {
           title='Community'
           description='Here are some of the community projects that I have been involved in.'
           link='#Community'
+          blank={true}
         />
 
         {

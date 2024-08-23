@@ -15,7 +15,7 @@ const AvailabilityCard = () => {
         className={style.description}
       >
         My current status is: <br />
-        Available for work!
+        Looking for internships!
       </p>
     </div>
   )
