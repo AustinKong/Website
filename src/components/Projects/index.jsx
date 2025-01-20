@@ -4,28 +4,35 @@ import Project from './Project'
 import style from './index.module.css'
 
 import stucado from '../../assets/images/projects/Stucado-min.png'
-import eden from '../../assets/images/projects/Eden-min.png'
 import helios from '../../assets/images/projects/Helios-min.png'
 import typing from '../../assets/images/projects/Typing-min.png'
-import anime from '../../assets/images/projects/Anime-min.png'
+import spotless from '../../assets/images/projects/Spotless-min.png'
+import portwell from '../../assets/images/projects/Portwell-min.png'
 
 import rag from '../../assets/images/projects/RAG2-min.jpeg'
 import kewoc from '../../assets/images/projects/KEWOC-min.jpg'
 
 const PROJECTS = [
   {
+    title: 'Portwell',
+    tags: ['2024', 'React', 'Ruby on Rails', 'Postgres', 'Hackathon Winner'],
+    image: portwell,
+    description: 'Portwell is a mental wellness platform built using React, Ruby on Rails, and PostgreSQL, featuring an AI-powered chatbot that acts as both a personal assistant and mental wellness coach for employees. Won the Commendation Prize (Top 15 out of 100+ teams) in PSA Codesprint hackathon 2024 for delivering an innovative AI-based solution promoting workforce well-being and upskilling.',
+    link: 'https://github.com/Zenkoh1/psa-codesprint-2024'
+  },
+  {
+    title: 'Spotless',
+    tags: ['2024', 'React', 'Django', 'Postgres', 'Hackathon Winner'],
+    image: spotless,
+    description: 'SBS Spotless is a comprehensive fleet management solution developed for SBS Hackathon 2024, which allows bus operators to manage the cleanliness of SBS\'s bus fleet with features such as cleanliness checklist assigning, AI powered cleanliness verification system, QR based feedback collection system, data visualization tools etc.',
+    link: 'https://github.com/Zenkoh1/sbs-spotless'
+  },
+  {
     title: 'Stucado',
     tags: ['2024', 'React', 'Electron', 'SQLite', 'Productivity Tool'],
     image: stucado,
     description: 'Stucado is a data-driven productivity tool tailored for university students, and was created for NUS Orbital 23/24 at Apollo (advanced) level. The project is feature rich and includes a customized to-do lists, timetable integration, adaptive pomodoro timers and insightful statistics visualizations with machine learning features. Moreover, the system is extensively documented in a 60 page README, going in depth on the various design decisions and challenges faced during each stage of development.',
     link: 'https://github.com/AustinKong/stucado'
-  },
-  {
-    title: 'Eden',
-    tags: ['2023', 'Unity', 'C#', 'Blockbench'],
-    image: eden,
-    description: 'Eden, formerly "Mind Gardens", is a simple gardening simulator with charming 3D pixel art graphics, and beautiful ambiance effects. Tend to your garden and grow flowers, the game was designed to provide a calming experience. You might even get surprise visits from a snails!',
-    link: 'https://github.com/AustinKong/mind-gardens'
   },
   {
     title: 'Helios',
@@ -40,13 +47,6 @@ const PROJECTS = [
     image: typing,
     description: 'Emoji Type, formerly Typing Test, is a simple, real-time, minimalist typing test website built fully using basic HTML, CSS and Javascript. It attempts to mimic MonkeyType with real-time statistics tracking, 4 typing modes and randomly generated quotes from an external API. This was a passion project I worked on during my period of obsession with typing speed and keyboards.',
     link: 'https://github.com/AustinKong/typing-test'
-  },
-  {
-    title: 'My Animanga',
-    tags: ['2021', 'Electron', 'HTML', 'CSS', 'Series Tracker'],
-    image: anime,
-    description: `My Animanga, formerly Anime List, is a tool for keeping track of anime and manga series. It can be used to search for, and keep track of up to date anime/manga information, thanks to the AniList API. Users can manage custom lists with their favourite shows, which are saved to memory. This project was created during my Weaboo phase, I'm well over it now.`,
-    link: 'https://github.com/AustinKong/anime-list'
   },
 ]
 
