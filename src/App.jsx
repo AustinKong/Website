@@ -8,6 +8,7 @@ import Hero from './components/Hero'
 import About from './components/About'
 import { Projects, Community } from './components/Projects'
 import Contact from './components/Contact'
+import Cooking from './components/Cooking'
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <About />
         <Projects />
         <Community />
+        <Cooking />
       </main>
       <footer>
         <Contact />

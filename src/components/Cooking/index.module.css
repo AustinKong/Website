@@ -1,0 +1,24 @@
+.cooking {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--black);
+  text-align: center;
+  gap: 2rem;
+  padding: 4rem 0;
+}
+
+.cooking img {
+  width: 30vw;
+  max-width: 400px;
+}
+
+.text {
+  max-width: 70vw;
+}
+
+.text a {
+  all: unset;
+  text-decoration: underline;
+  cursor: pointer;
+}
