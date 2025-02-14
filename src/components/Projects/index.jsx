@@ -97,7 +97,7 @@ const COMMUNITY_PROJECTS = [
     title: 'KEWOC & EC',
     tags: ['2024', 'Orientation Camp', 'KEVII'],
     image: kewoc,
-    description: 'King Edward VII Hall Orientation Camp (KEWOC) and Engagement Camp (EC) are annual camps held for freshmen of King Edward VII Hall to help them integrate into the hall community. I was part of the 2024 KEWOC and EC committee, and was involved in the planning and execution of the camps as the programmes director. Me and my team were in charge of organizing all camp activities and timelines, which include camp games, icebreakers, and night activities.',
+    description: 'King Edward VII Hall Orientation Camp (KEWOC) and Engagement Camp (EC) are annual camps held for freshmen of King Edward VII Hall to help them integrate into the hall community. I was part of the 2024 KEWOC and EC committee, and was involved in the planning and execution of the camps as the programmes head. Me and my team were in charge of organizing all camp activities and timelines, which include camp games, icebreakers, and night activities.',
   }
 ]
 
